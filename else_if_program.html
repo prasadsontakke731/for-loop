@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                color: white;
+                background-color: black;
+                /* font-size: 50px; */
+                text-align: center;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                /* height: 100vh; */
+            }
+
+            h1 {
+                color: white;
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                margin: 0;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!-- write js program to find weather given data is charecter,number,symbol -->
+
+        <h1>Ascee Value</h1>
+        <!-- //Write a JS program that finds whether given data is character,number,symbol
+
+          //ASCII => American Standard Code For Information Interchange
+         //char set => alphabet, number(0-9),symbols => unique no=> ascii code
+         //A=65,B=66,C=67......
+         //a=97,b=98......
+         //0=48,1=49...... -->
+        <script>
+            let data = "A";
+            if ((data >= 'A' && data <= 'Z') || (data >= 'a' && data <= 'z')) {
+
+                document.write("given data is char<br><br>")
+                if (data == "a" || data == "e" || data == "i" || data == "o" || data == "u" || data == "A" || data == "E" || data == "I" || data == "O" || data == "U") {
+                    document.write(`${data} is Vowel<br><br>`)
+                } else {
+                    document.write(`${data} is Consonent<br><br>`)
+
+                }
+            }
+            else if (data >= "0" && data <= "9") {
+                document.write("given data is Number")
+            }
+            else {
+                document.write("Given data is symbol")
+            }
+        </script>
+    </body>
+
+</html>

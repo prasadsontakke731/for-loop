@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                color: white;
+                background-color: black;
+
+                text-align: center;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
+
+            h1 {
+                color: white;
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                margin: 0;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Calculatar_using_switch</h1>
+
+
+        <script>
+            let x = Number(prompt("enter first number"))
+            let y = Number(prompt("enter first number"))
+            let choie = Number(prompt("enter choice"))
+
+            switch (choie) {
+                case 1:
+                    document.write(`<h1>Add Operation</h1>`)
+                    document.write(`Addition of ${x} and ${y} is = ${x + y}`)
+                    break;
+
+                case 2:
+                    document.write(`<h1>Sub Operation</h1>`)
+                    document.write(`Substraction of ${x} and ${y} is = ${x - y}`)
+                    break;
+
+                case 3:
+                    document.write(`<h1>Mult Operation</h1>`)
+                    document.write(`Multiplication of ${x} and ${y} is = ${x * y}`)
+                    break;
+
+                case 4:
+                    document.write(`<h1>Devigen Operation</h1>`)
+                    document.write(`Divigen of ${x} and ${y} is = ${x / y}`)
+                    break;
+
+                case 5:
+                    document.write(`<h1>Cube of x</h1>`)
+                    document.write(`Cube  of ${x}  is = ${x * x * x}`)
+                    break;
+
+                default:
+                    document.write(`Invalid Choice`)
+                    break
+            }
+        </script>
+    </body>
+
+</html>
